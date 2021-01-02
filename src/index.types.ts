@@ -16,3 +16,7 @@ export interface SinglePlayer {
 export interface PlayersListProps {
   players: SinglePlayer[];
 }
+
+export interface RankElementProps {
+  readonly rank: number;
+};

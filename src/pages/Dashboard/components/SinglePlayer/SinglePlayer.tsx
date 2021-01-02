@@ -6,7 +6,7 @@ import { Score } from '../../components';
 const SinglePlayer: FC<SinglePlayerProps> = (props) => {
   return (
     <ListElementContainer>
-      <RankElement>{props.rank + 1}</RankElement>
+      <RankElement rank={props.rank}>{props.rank + 1}</RankElement>
       <PictureElement>{props.picture}</PictureElement>
       <NameElement>{props.displayName}</NameElement>
       <Score score={props.score} />
