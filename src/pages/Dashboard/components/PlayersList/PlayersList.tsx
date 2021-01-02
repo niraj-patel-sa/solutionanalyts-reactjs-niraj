@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { ListContainer } from '../../StyledComponent';
-import { PlayersListProps } from '../../Dashboard.type';
+import { PlayersListProps } from '../../../../index.types';
 import { SinglePlayer } from '../../components';
 
 const PlayersList: FC<PlayersListProps> = (props) => {
@@ -15,6 +15,7 @@ const PlayersList: FC<PlayersListProps> = (props) => {
             picture={player.picture}
             userID={player.userID}
             rank={index}
+            key={index}
           />
         })
       }
