@@ -1,10 +1,10 @@
 import { FC } from "react";
+import { PlayersList } from './components';
+import sampleData from '../../common/sample-payload.json';
 
 const Dashboard: FC = () => {
-  return(
-    <div>
-      <span>Welcome to Leaderboard</span>
-    </div>
+  return (
+    <PlayersList players={sampleData} />
   )
 };
 
