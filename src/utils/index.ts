@@ -9,7 +9,7 @@ export const mapRandomScore = (playersData: SinglePlayer[]) => {
   const updatedData = playersData.map(player => {
     return {
       ...player,
-      score: generateRandomNumber()
+      score: player.score += generateRandomNumber()
     };
   }).sort((a, b) => b.score - a.score);
   return updatedData;
