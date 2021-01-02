@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import { ScoreContainer, ScoreElement } from '../../StyledComponent';
 
 const Score: FC<{ score: number }> = (props) => {

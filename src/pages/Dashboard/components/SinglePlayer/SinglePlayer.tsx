@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import { ListElementContainer, NameElement, RankElement, PictureElement } from '../../StyledComponent';
 import { SinglePlayerProps } from '../../../../index.types';
 import { Score } from '../../components';

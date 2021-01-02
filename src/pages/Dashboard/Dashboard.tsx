@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { PlayersList } from './components';
 import sampleData from '../../common/sample-payload.json';
 import { mapRandomScore } from '../../utils';
