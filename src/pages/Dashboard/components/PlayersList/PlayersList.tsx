@@ -8,12 +8,13 @@ const PlayersList: FC<PlayersListProps> = (props) => {
     <ListContainer>
       {
         props.players && props.players.length > 0
-        && props.players.map(player => {
+        && props.players.map((player, index) => {
           return <SinglePlayer
             displayName={player.displayName}
             score={player.score}
             picture={player.picture}
             userID={player.userID}
+            rank={index}
           />
         })
       }

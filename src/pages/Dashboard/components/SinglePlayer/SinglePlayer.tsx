@@ -1,13 +1,14 @@
 import { FC } from "react";
-import { ListElementContainer, ListElement } from '../../StyledComponent';
+import { ListElementContainer, NameElement, ScoreElement, RankElement } from '../../StyledComponent';
 import { SinglePlayerProps } from '../../Dashboard.type';
 
 const SinglePlayer: FC<SinglePlayerProps> = (props) => {
   return (
     <ListElementContainer>
-      <ListElement>{props.displayName}</ListElement>
-      <ListElement>{props.picture}</ListElement>
-      <ListElement>{props.score}</ListElement>
+      <RankElement>{props.rank + 1}</RankElement>
+      <NameElement>{props.displayName}</NameElement>
+      {/* <ListElement>{props.picture}</ListElement> */}
+      <ScoreElement>{props.score}</ScoreElement>
     </ListElementContainer>
   )
 }

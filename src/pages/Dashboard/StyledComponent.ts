@@ -11,6 +11,14 @@ export const ListElementContainer = styled.div`
  padding: 2%
 `;
 
-export const ListElement = styled.span`
-  text-align: center;
+export const RankElement = styled.span`
+ text-align: left;
 `;
+
+export const NameElement = styled.span`
+  text-align: left;
+`;
+
+export const ScoreElement = styled.span`
+   text-align: right;
+`
