@@ -4,7 +4,7 @@ import { RankElementProps } from '../../index.types';
 
 export const ListContainer = styled.div`
   background-color: #f7f5f6;
-  margin:5%;
+  margin: 1% 5% 1% 5%;
   border-radius: 2%;
 `;
 
